@@ -1,0 +1,915 @@
+// this css has been made on the request of not loading too much css on the server
+
+// Fonts
+@font-face {
+  font-family: "Somar-Sans";
+  src: url("./Public/fonts/Expanded/SomarSans-LightExpanded.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Somar-Sans-Standard";
+  src: url("./Public/fonts/Standard/SomarSans-Light.otf") format("opentype");
+}
+//Global Varibales
+body {
+  margin: 0;
+  color: #000;
+  font-family: "Somar-Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/***************** Scroll behaviour ***********/
+body::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+/**************** scroller style ********************/
+.scrollbar {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+
+.dot {
+  background-color: #ccc;
+  border-radius: 12px;
+  cursor: pointer;
+  height: 20px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+  width: 10px;
+}
+
+.dot.active {
+  transform: scale(1.5);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  transform: scale(1.5);
+  background: #fff;
+  height: 2rem;
+  transition: 0.3s all ease-in-out;
+}
+/***************** on scroll trigger navbar **************/
+.responsive_logo {
+  display: none;
+}
+.logo_2 {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  right: 0;
+}
+
+.main-list {
+  color: white;
+}
+
+.scroll-666 .logo {
+  display: none;
+  transition: 0.3s all ease-in-out;
+}
+
+.scroll-666 .logo_2 {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-666 .main-list {
+  color: black;
+}
+/****************** Hide on 1533 scroll and more *********/
+.logo_3 {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  right: 0;
+}
+.scroll-1533 .logo {
+  display: none;
+  transition: 0.3s all ease-in-out;
+}
+.scroll-1533 .logo_2 {
+  display: none;
+  transition: 0.3s all ease-in-out;
+}
+.scroll-1533 .logo_3 {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-1533 .main-list {
+  li {
+    color: #000;
+    transition: 0.3s all ease-in-out;
+  }
+}
+.scroll-1533 #booking-button {
+  background: #147eff;
+  color: #000;
+  transition: 0.3s all ease-out;
+
+  &:hover {
+    background: #147effd2;
+    color: #fff;
+    transition: 0.3s all ease-out;
+  }
+}
+
+/****************** Hide on 2304 scroll and more *********/
+.scroll-2304 .logo {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s all ease-in-out;
+  display: block;
+}
+.scroll-2304 .logo_2 {
+  display: none;
+  transition: 0.3s all ease-in-out;
+}
+.scroll-2304 .logo_3 {
+  display: none;
+  transition: 0.3s all ease-in-out;
+}
+
+.scroll-2304 .main-list {
+  li {
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+  }
+}
+.scroll-2304 #booking-button {
+  background: transparent;
+  color: #fff;
+  transition: 0.3s all ease-out;
+
+  &:hover {
+    background: #147effd2;
+    color: #fff;
+    transition: 0.3s all ease-out;
+  }
+}
+/**************Hide on 3240 scroll **************/
+.scroll-3240 .logo_3 {
+  display: none;
+  transition: 0.3s all ease-in-out;
+}
+.main-list {
+  color: white;
+}
+
+.scroll-3240 .logo {
+  display: none;
+  transition: 0.3s all ease-in-out;
+}
+
+.scroll-3240 .logo_2 {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  transition: 0.3s all ease-in-out;
+}
+.scroll-3240 .main-list {
+  li {
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+  }
+}
+/************** START FROM HEADER************/
+nav {
+  width: 100%;
+  max-width: 2560px;
+  left: 0;
+  right: 0;
+}
+/************* START From Header All Routes ****************/
+nav.main-navbar.mr-16.mt-8.flex.fixed.right-0.z-50 {
+  margin: 0 auto;
+  top: 1rem;
+}
+nav.main-navbar-routes.mr-16.mt-8.flex.fixed.right-0.z-50 {
+  background: #0e0e14;
+  height: 13vh;
+  margin: 0 auto;
+  max-height: 100px;
+}
+#logo_routes {
+  margin-top: 1.7rem;
+}
+#nav-routes {
+  margin-top: 2rem;
+}
+i.fa-solid.fa-bars {
+  display: none;
+}
+/******** on navFixed **********/
+nav.main-navbar.mr-12.mt-8.flex.fixed.right-0.z-50 {
+  margin: 0 auto;
+  top: 1rem;
+}
+.main-list {
+  li {
+    padding-right: 5rem;
+    color: #fff;
+  }
+}
+
+/************** START FROM Section************/
+.Hero-sction {
+  max-width: 2560px;
+  margin: 0 auto;
+}
+.hero-content {
+  h1 {
+    font-weight: 800;
+  }
+}
+#intro-frame {
+  opacity: 0;
+}
+#intro-frame-v2 {
+  opacity: 0;
+}
+#fram-button {
+  opacity: 0;
+}
+.fram-intro-text {
+  opacity: 0;
+  top: 1rem;
+}
+.third-frame {
+  left: -40rem;
+  position: relative;
+}
+img#top-left-rectangle {
+  top: 16rem;
+  left: 12rem;
+  opacity: 0;
+}
+img#icon-fram_1 {
+  top: 6rem;
+  left: 13rem;
+  opacity: 0;
+}
+img#icon-fram_2 {
+  top: 13rem;
+  left: -11rem;
+  opacity: 0;
+}
+img#icon-fram_3 {
+  top: 4rem;
+  left: -11rem;
+  opacity: 0;
+}
+
+/************** START FROM Section1 Static************/
+.hero-conatiner {
+  background: url("../Public/assets/HeroSection.png") center center/cover
+    no-repeat;
+  width: 100%;
+  height: 100vh !important;
+  max-height: 680px;
+  min-height: 690px;
+}
+
+/*************** bussniess Discription ************/
+section.bussiness-Discription {
+  height: auto !important;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 2560px;
+  min-height: 600px;
+  max-height: 700px;
+}
+#filter-background {
+  height: 180vh;
+  max-height: 1500px;
+}
+#section2 {
+  li {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+}
+/************** start FROM splide slider************/
+.my-slider-progress {
+  background-image: linear-gradient(
+    to right,
+    #28333f,
+    #293b51,
+    #264871,
+    #23538c
+  );
+  position: absolute;
+  top: 8rem;
+  z-index: 20;
+  right: 0;
+  height: 10px;
+  width: 200px;
+  transition: 0.3s all ease-out;
+}
+.progress-content {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 85%;
+  top: 0.3rem;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  z-index: 2;
+}
+
+#progressText {
+  margin-right: 10px; /* Adjust as needed */
+}
+/************ START From Splide Pagination ******/
+.custom-pagination {
+  display: block !important;
+  position: absolute;
+  top: 13rem;
+  left: 5rem;
+  color: #fff;
+
+  button {
+    display: block;
+    padding: 1.5rem;
+  }
+}
+/**************images On design *********/
+
+#slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#slider_1 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/************ icon edite **************/
+.icons-inactive {
+  filter: grayscale(100%);
+
+  &:hover {
+    filter: grayscale(0%);
+    background: #147eff;
+    border-radius: 25rem;
+    width: auto;
+    transition: 0.3s all ease-in;
+  }
+}
+#border-icon {
+  background: #ffffff33;
+  border-radius: 25rem;
+  border: 1px solid #565656;
+  width: 80px;
+  &:hover {
+    background: #147eff;
+    border: 1px solid #147eff;
+    width: auto;
+    transition: 0.3s all ease-in;
+  }
+}
+.icons-inactive.active {
+  filter: grayscale(0%);
+  background: #147eff;
+  border-radius: 25rem;
+  width: 100px;
+}
+#border-icon.active {
+  filter: grayscale(0%);
+  background: #147eff;
+  border-radius: 25rem;
+  width: 100px;
+}
+/********************** on slider span aniamtions ******************/
+
+/********************** Start From Policey ***************/
+.policy-container {
+  display: block;
+  height: 120vh;
+  margin: 0 auto;
+  max-height: 800px;
+  max-width: 2560px;
+  position: relative;
+  top: 10rem;
+  width: 100%;
+}
+.policy-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ffffffe0;
+  z-index: 1;
+}
+.policy-content {
+  background: #fff url(../Public/assets/policey-background.jpg) 100% / cover
+    no-repeat;
+  height: 100vh !important;
+  max-height: 1000px;
+  min-height: 690px;
+  position: relative;
+  width: 100%;
+}
+img.leading-animation {
+  width: 30px;
+  position: absolute;
+  top: 4rem;
+  right: 10.5rem;
+  transform: rotate(270deg);
+}
+img.leading-animation-left {
+  width: 30px;
+  position: absolute;
+  left: 16rem;
+  top: 22rem;
+  transform: rotate(264deg);
+}
+img#plane-frame_4 {
+  top: 38rem;
+}
+/********************** Start From Booking ************************/
+.booking-container {
+  display: block;
+  height: 160vh;
+  position: relative;
+  width: 100%;
+  max-height: 1000px;
+  max-width: 2560px;
+  margin: 0 auto;
+}
+.booking-content {
+  background: #60affe url(./Public/assets/Images_6.png) 100% / cover no-repeat;
+  height: 180vh !important;
+  max-height: 1000px;
+  min-height: 690px;
+  position: relative;
+  top: 7rem;
+  width: 100%;
+}
+.booking-inputs {
+  width: 400px;
+  position: relative;
+  height: 60vh;
+  margin-right: 2rem;
+  margin-top: -5rem;
+  border-radius: 1rem;
+}
+p.text-base.font-medium.text-center.text-\[\#4096FF\] {
+  font-size: 12px;
+}
+// Calender styles
+/**************** color of calender's text ********************/
+p.text-base.text-gray-500.dark\:text-gray-100.font-medium {
+  color: black;
+}
+p.text-base.text-gray-500.dark\:text-gray-100 {
+  color: #aeaeae;
+}
+/********************* Start from subscribtion *************/
+.subscribtion {
+  display: block;
+  height: 200vh;
+  position: relative;
+  width: 100%;
+  max-width: 2560px;
+  margin: 0 auto;
+  max-height: 1240px;
+}
+.subscribtion-details.bg-\[\#147EFF\].h-\[20vh\].relative.z-10.w-full.rounded-t-lg {
+  height: 130px;
+  max-height: 500px;
+}
+.subscribtion-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #15151be5;
+  z-index: 1;
+}
+.subscribtion-title {
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+}
+.subscribtion-container {
+  background: rgba(21, 21, 27, 0.898)
+    url(../Public/assets/meetings_background.jpg) 100% / cover no-repeat;
+  height: 2000vh !important;
+  max-height: 1100px;
+  min-height: 1000px;
+  position: relative;
+  top: 7rem;
+  width: 100%;
+  z-index: -1;
+}
+.subscribtion-content {
+  background: #2b2b30d0;
+  border-radius: 2rem;
+}
+.features-source {
+  display: flex;
+  font-size: 12px;
+}
+footer.main-footer.m-auto.text-center.w-full.bg-\[\#0E0E14\].h-\[60px\] {
+  position: absolute;
+  bottom: 0;
+}
+img.quote.absolute.ml-6.mt-8 {
+  z-index: -1;
+}
+/************* from Routes Clients **********/
+
+/*
+*
+*
+*
+*
+*
+**
+*
+**
+*
+**
+*
+**
+*
+**
+*
+**
+*
+**/
+//Routes-header
+.Routes-header {
+  width: 100%;
+  position: relative;
+  max-width: 2560px;
+  height: 80vh;
+  margin: 0 auto;
+  max-height: 600px;
+}
+.Routes-container {
+  background: url(../Public/assets/frame_489.png) 50% / cover no-repeat;
+  height: 70vh;
+  position: relative;
+  width: 100%;
+  max-width: 2560px;
+  max-height: 500px;
+}
+/***************** clients Route ************/
+section.sponsers-logo {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.sponsers_column {
+  img {
+    width: 50px;
+  }
+}
+.feedback-slider {
+  width: 100%;
+  height: 65vh;
+}
+/************************* Contact us route *******************/
+.contact-info_container {
+  a {
+    display: block;
+    width: 360px;
+  }
+}
+.map_container {
+  background: #fff;
+  border-radius: 8px;
+  height: 435px;
+  right: 4rem;
+  position: relative;
+  top: 13rem;
+  width: 650px;
+}
+iframe {
+  margin: 0 auto;
+  top: -4rem;
+  position: relative;
+}
+/********************** RESPONSIVE ON ALL SCREENS *****************/
+@media screen and (max-width: 984px) {
+  //nav responsive
+  nav.main-navbar {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .responsive_logo {
+    display: block;
+  }
+  h1.fram-intro-text {
+    width: 300px;
+    text-align: center;
+    position: relative;
+    margin-right: 0;
+  }
+  button#fram-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1#intro-frame {
+    font-size: 40px;
+  }
+  .Discription-content.text-white.m-auto.w-\[608px\].top-\[24rem\].relative.z-20.text-center {
+    font-size: 10px;
+    width: 300px;
+    top: 6rem;
+  }
+  .progress-content {
+    width: 130px;
+    img {
+      width: 50px;
+    }
+  }
+  span#progressText {
+    font-size: 10px;
+  }
+  #filter-background {
+    height: 41vh;
+    max-height: 1200px;
+  }
+  section.bussiness-Discription {
+    height: 20vh;
+    min-height: unset;
+  }
+  .Discription-content.text-white.m-auto.w-\[608px\].top-\[24rem\].absolute.right-0.left-0.z-20.text-center {
+    top: 5rem;
+    font-size: 10px;
+    width: 300px;
+  }
+  .text-center.font-thin.text-3xl.text-\[\#147EFF\].tracking-wide {
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  .grid.grid-cols-4.m-auto.gap-\[4rem\].mt-12 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 407px;
+    gap: 1rem;
+  }
+  .sponsers_column {
+    img {
+      width: 30px;
+    }
+  }
+  .policy-container {
+    top: 0;
+  }
+  h1.text-3xl.mt-\[1\.1rem\].font-semibold.w-\[1068px\].text-center.text-\[\#2286FF\].m-auto {
+    font-size: 15px;
+    margin: 0 auto;
+    display: flex;
+    width: 340px;
+  }
+  p.mt-4.policy-frame.text-\[\#fff\] {
+    font-size: 25px;
+    top: 1rem;
+    position: relative;
+  }
+
+  //scroll-behaviour
+  .scrollbar {
+    display: none;
+  }
+  // Hero Responsive
+  .hero-left-column {
+    display: none;
+  }
+  // Hero  content responsive
+  .content-details {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .my-slider-progress {
+    top: 2rem;
+  }
+
+  h1.text-white.text-6xl.tracking-wide.z-20.absolute.mt-\[2rem\] {
+    font-size: 40px;
+    margin-top: 3rem;
+  }
+  // slider section
+  .custom-pagination {
+    display: flex !important;
+    left: 0;
+  }
+
+  /*********** Routes Respnosive **************/
+  //toggle
+  i.fa-solid.fa-bars {
+    color: #fff;
+    font-size: 30px;
+    z-index: 50;
+    display: block;
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+  i.fa-circle-xmark {
+    color: #fff;
+    font-size: 30px;
+    z-index: 50;
+    display: none;
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+  .main-navbar-routes {
+    flex-direction: column;
+    align-items: flex-start;
+
+    #nav-routes {
+      background-color: rgba(43, 43, 48, 0.816);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      display: none;
+      height: auto;
+      left: 0;
+      margin: 0 auto;
+      overflow-y: auto;
+      padding: 67px;
+      position: absolute;
+      text-align: center;
+      top: 5.3rem;
+      width: 100%;
+      z-index: 1;
+
+      li {
+        margin-bottom: 72px;
+        font-size: 20px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+        display: block;
+
+        &:hover {
+          background-color: #555;
+        }
+      }
+    }
+    button#booking-button {
+      margin: 0 auto;
+      left: 0;
+      right: 4rem;
+      width: 200px;
+    }
+  }
+  /**************** Clients index responsive ***************/
+  .client-range.bg-white.w-\[80\%\].mt-\[-4rem\].m-auto {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+// responsive
+@media screen and (max-width: 1024px) {
+  h1.text-white.text-5xl.tracking-wide.z-20.absolute.mt-\[3rem\] {
+    font-size: 34px;
+  }
+  .Routes-container {
+    min-height: 410px;
+  }
+  section.contact-info.float-right.w-\[652px\].h-\[165px\].bg-white.mr-12 {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  h1.text-4xl.border-b-2.w-\[90\%\].mr-4.float-right.mt-4.p-\[1rem\] {
+    font-size: 20px;
+  }
+  iframe {
+    margin: 0 auto;
+    position: relative;
+    top: 7rem;
+    width: 350px;
+  }
+  section.contact-inputs.w-\[476px\].h-\[752px\].bg-white.ml-\[4rem\] {
+    margin: 0 auto;
+    position: relative;
+    top: 14rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 0 auto;
+    position: absolute;
+    top: 56rem;
+    left: 0;
+  }
+  input.p-3.top-2.relative.mt-6.mb-4.w-\[450px\].block.ml-\[1rem\].bg-white.rounded.border-2.border-slate-200.focus\:border-slate-600.focus\:outline-none {
+    width: 350px;
+  }
+  h1.text-4xl.mr-2.border-b-2.w-\[600px\].p-\[0\.2rem\] {
+    font-size: 20px;
+  }
+  p.text-2xl.mt-2 {
+    font-size: 20px;
+  }
+  .map_container {
+    background: #fff;
+    border-radius: 8px;
+    height: 435px;
+    position: relative;
+    top: 73rem;
+    width: 400px;
+    right: 0;
+  }
+}
+//test
+/* Define a CSS animation */
+/* Define a CSS animation
+@keyframes drawPath {
+  0% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+  5% {
+    stroke-dashoffset: 0;
+    opacity: 0.1;
+  }
+  10% {
+    stroke-dashoffset: 0;
+    opacity: 0.2;
+  }
+  15% {
+    stroke-dashoffset: 0;
+    opacity: 0.3;
+  }
+  20% {
+    stroke-dashoffset: 0;
+    opacity: 0.4;
+  }
+  25% {
+    stroke-dashoffset: 0;
+    opacity: 0.6;
+  }
+  45% {
+    stroke-dashoffset: 0;
+    opacity: 0.7;
+  }
+  50% {
+    stroke-dashoffset: -300;
+    opacity: 1; 
+  }
+  100% {
+    stroke-dashoffset: -600; 
+    opacity: 0;
+  }
+}
+
+#myAnimatedPath {
+  stroke-dasharray: 5 10; 
+  animation: drawPath 3s linear forwards;
+}
+
+#myAnimatedPath {
+  fill: none;
+  stroke: #147eff;
+  stroke-width: 2;
+  stroke-linecap: round; /
+}
+*/

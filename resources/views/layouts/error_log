@@ -1,0 +1,4 @@
+[03-Feb-2024 23:52:19 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\Logo" not found in /home/r9jn3d6920t8/public_html/cms.wahfyservices.com/Magna/resources/views/layouts/site_navbar.blade.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/r9jn3d6920t8/public_html/cms.wahfyservices.com/Magna/resources/views/layouts/site_navbar.blade.php on line 4

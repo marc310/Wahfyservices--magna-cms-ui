@@ -1,0 +1,308 @@
+@media (max-width: 767px) {
+
+
+
+
+    /*===================== start nav  =====================*/
+    .bg-transparent-nav {
+        left: 1rem !important;
+        margin-top: -1rem !important;
+    }
+
+    nav.main-navbar-routes.mr-16.mt-8.flex.fixed.right-0.z-50 {
+        background: transparent !important;
+    }
+
+    /*===================== end nav  =====================*/
+    /*===================== start home page =====================*/
+    .hero-content h1 {
+        font-size: 20px !important;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+#section2 li{
+    padding: 0;
+}
+    .custom-pagination {
+        flex-direction: row-reverse;
+    }
+
+    .hero-content {
+        padding: 0px 20px !important;
+        margin-right: 0 !important;
+    }
+
+    .hero .h1-Booking-ShowCase-Section {
+        font-size: 20px !important;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .fram-intro-text {
+        width: 335px;
+    }
+
+    .booking-container form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1px;
+    }
+
+    .toggle-booking-inputs {
+        margin-top: 10px !important;
+    }
+
+    .booking-container,
+    .booking-content {
+        max-height: 1385px !important;
+    }
+
+    .box-component {
+        flex-direction: column-reverse !important;
+        gap: 100px;
+    }
+
+    .img-public-assets {
+        max-width: 335px;
+    }
+
+    .subscribtion-title h1 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 0px 10px;
+    }
+
+    .subscribtion-title p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 0px 10px;
+    }
+
+    .subscribtion-content {
+        max-width: 365px;
+        z-index: 5000;
+    }
+
+    .package-price {
+        font-size: 21px !important;
+        padding-right: 0px;
+    }
+
+    .p-package-price {
+        font-size: 16px !important;
+        padding-right: 18px;
+    }
+
+    .font-semibold {
+        width: 330px !important;
+    }
+
+    .img-public {
+        top: 46px;
+        right: 3px;
+    }
+
+    /*===================== end home page =====================*/
+    /*===================== start conent page ======================== */
+    .contact-info-h1 {
+        margin: 0 !important;
+        text-align: right;
+    }
+
+    .Routes-container-policy {
+        width: 114% !important;
+        height: 70vh !important;
+        max-height: none !important;
+    }
+
+    .Routes-container-client {
+        height: 60vh !important;
+        max-height: none !important;
+
+    }
+
+    .Routes-container-contact {
+        height: 68vh !important;
+        max-height: none !important;
+        width: 102% !important;
+    }
+
+    .contact-inputs-textarea {
+        width: 350px !important;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 102% !important;
+    }
+
+    .map_container {
+        height: 550px;
+        margin: -300px 0;
+    }
+
+    iframe {
+        top: 10rem;
+    }
+
+    .routes-content {
+        text-align: center;
+        margin-right: 0;
+        padding: 0px 10px;
+    }
+
+    .contact-inputs {
+        top: 45rem !important;
+    }
+
+    /*===================== end conent page ======================== */
+    /*===================== start clients page =====================*/
+    .routes-content {
+        margin-right: 0px !important;
+    }
+
+    .sponsers-h1 {
+        padding-right: 95px;
+    }
+
+    .p-data-feddback {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding-right: 102px;
+        padding-top: 20px;
+    }
+
+    .feedback-slider-h1 {
+        font-size: 20px !important;
+        font-weight: 500 !important;
+        line-height: 33px !important;
+        letter-spacing: 0em !important;
+    }
+
+    .h1-clinet {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        line-height: 33px !important;
+        letter-spacing: 0em !important;
+        text-align: center !important;
+    }
+
+    .p-clinet {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .splide__slide {
+        padding: 20px;
+    }
+
+
+    /*==================== end clients page ============*/
+    /*==================== start policy page ===========*/
+    .box-rtl,
+    .box-ltr {
+        width: 6%;
+        position: inherit;
+        padding-right: 20px;
+    }
+
+    .box-rtl .boxx,
+    .box-ltr .boxx {
+        max-width: 327px;
+        align-items: flex-start;
+    }
+
+    .box-rtl .numper,
+    .box-ltr .numper {
+        padding: 3px 12px;
+        font-size: 21px;
+        z-index: 1;
+    }
+
+    .section-container .content {
+        max-width: 327px;
+    }
+
+
+    .box-rtl:before,
+    .box-rtl:after,
+    .box-ltr:before,
+    .box-ltr:after,
+    .box-rtl .numper::after,
+    .box-ltr .numper::after {
+        content: none !important;
+    }
+
+    .box-rtl h1,
+    .box-ltr h1 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: right;
+        margin-top: 0;
+    }
+
+    .box-rtl p,
+    .box-ltr p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: right;
+        max-width: 327px;
+        padding-bottom: 0;
+    }
+
+    .box-ltr .boxx {
+        flex-direction: row-reverse;
+    }
+
+    .section-container {
+        max-width: 440px;
+    }
+
+    .section-container .data {
+        align-items: end;
+    }
+
+    .text-p-boxx {
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: right;
+    }
+
+    .h1-section-one-policy {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
+
+    .p-section-one-policy {
+        font-size: 16px !important;
+    }
+
+    /*==================== end policy page ===========*/
+
+
+
+}

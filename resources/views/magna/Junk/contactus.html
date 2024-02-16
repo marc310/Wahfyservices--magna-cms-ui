@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Slider Plugin-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <!--Tailwind dependencies-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MAGNA | تواصل معنا</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>عملاؤنا| MAGNA</title>
+    <!--Fav icon-->
+    <link rel="icon" href="./Public/assets/Favicon.png" type="image/x-icon" />
+  </head>
+  <body class="bg-[#EDF2F7]">
+    <!----------------------NAV Header------------------------->
+    <!--          START FROM HERE DEPLOY ON ALL ROUTES         -->
+    <header>
+      <nav
+        class="main-navbar-routes mr-16 mt-8 flex fixed right-0 z-50"
+        dir="rtl"
+      >
+        <div class="responsive-icons mr-6">
+          <i class="fa-solid fa-bars icon-active"></i>
+        </div>
+        <a href="./index.html">
+          <div class="logo" id="logo_routes">
+            <img
+              src="./Public/assets/Logo.png"
+              alt=""
+              class="magna-logo w-[150px] relative mt-[0.2rem] mr-16"
+            />
+          </div>
+        </a>
+        <!------responsive_logo--------->
+        <a href="./index.html">
+          <div class="responsive_logo">
+            <img
+              src="./Public/assets/Responsiv_Logo.png"
+              alt=""
+              class="magna-logo w-[30px] relative mt-[1.5rem] mr-16"
+            />
+          </div>
+        </a>
+
+        <ul class="main-list flex mr-2 mt-2 font-semibold" id="nav-routes">
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="./policy.html">منهجية ماجنا الاستراتيجي</a></li>
+          <li><a href="./clients.html">عملاؤنا</a></li>
+          <li><a href="./contactus.html">تواصل معنا</a></li>
+          <li>
+            <button
+              id="booking-button"
+              dir="ltr"
+              class="bg-transparent mt-[-0.5rem] hover:bg-blue-500 text-white hover:text-white py-2 px-4 border border-white-500 hover:border-transparent rounded left-16 font-semibold top-[2rem] z-50 fixed"
+            >
+              احجز استشارتك الأن
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--ALL ROUTES Header ShowCASE-->
+    <section class="Routes-header" id="clients-Route">
+      <div class="Routes-container" id="client-routes_container">
+        <div
+          dir="rtl"
+          class="routes-content text-white relative z-10 mr-12 top-[12rem]"
+          id="client-routes_content"
+        >
+          <h1 class="text-6xl">تواصل معنا</h1>
+          <p class="mt-8 text-xl font-thin">
+            نحن هنا لسماعك و مساعتدتك,تواصل معنا الأن !
+          </p>
+        </div>
+      </div>
+    </section>
+    <div
+      class="lg:grid grid-cols-2 sm:grid grid cols-1 block max-w-[1260px] m-auto"
+    >
+      <!----------------------Contacts inputs ----------------------------->
+      <section class="contact-inputs w-[476px] h-[752px] bg-white ml-[4rem]">
+        <h1 dir="rtl" class="text-4xl mt-4 rounded mr-4">
+          تواصل مع الدعم الفني
+        </h1>
+        <div class="contact-form">
+          <form action="">
+            <hr class="my-6" />
+            <label
+              dir="rtl"
+              class="uppercase text-sm float-right mr-4 font-bold opacity-70"
+              >الاسم</label
+            >
+            <input
+              dir="rtl"
+              type="text"
+              placeholder="الاسم"
+              class="p-3 top-2 relative mt-6 mb-4 w-[450px] block ml-[1rem] bg-white rounded border-2 border-slate-200 focus:border-slate-600 focus:outline-none"
+            />
+            <label
+              dir="rtl"
+              class="uppercase text-sm float-right mr-4 font-bold opacity-70"
+              >البريد الالكتروني</label
+            >
+            <input
+              dir="rtl"
+              type="email"
+              placeholder="البريدالالكتروني"
+              class="p-3 top-2 relative mt-6 mb-4 w-[450px] block ml-[1rem] bg-white rounded border-2 border-slate-200 focus:border-slate-600 focus:outline-none"
+            />
+            <label
+              dir="rtl"
+              class="uppercase text-sm float-right mr-4 font-bold opacity-70"
+            >
+              رقم التواصل</label
+            >
+            <input
+              dir="rtl"
+              type="email"
+              placeholder="رقم التواصل"
+              class="p-3 top-2 relative mt-6 mb-4 w-[450px] block ml-[1rem] bg-white rounded border-2 border-slate-200 focus:border-slate-600 focus:outline-none"
+            />
+            <label
+              dir="rtl"
+              class="uppercase text-sm float-right mr-4 font-bold opacity-70"
+            >
+              الرسالة
+            </label>
+            <textarea
+              dir="rtl"
+              id="message"
+              rows="4"
+              class="block p-2.5 w-[90%] h-[267px] m-auto text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="اكتب رسالتك."
+            ></textarea>
+          </form>
+          <h1
+            class="w-[120px] p-[0.6rem] text-center relative top-[1rem] left-[1rem] shadow-lg shadow-gray-500/50 bg-[#147EFF] text-white rounded-lg text-[15px] cursor-pointer active:scale-[.97]"
+          >
+            ارسال
+          </h1>
+        </div>
+      </section>
+      <!----------------------Contacts info ----------------------------->
+      <div class="left-column grid-cols-1">
+        <section
+          class="contact-info float-right w-[652px] h-[165px] bg-white mr-12"
+        >
+          <h1
+            dir="rtl"
+            class="text-4xl border-b-2 w-[90%] mr-4 float-right mt-4 p-[1rem]"
+          >
+            معلومات عن التواصل
+          </h1>
+
+          <div class="contact-info_container mt-4 float-right">
+            <a
+              href="tel:+966563084444"
+              class="text-black relative left-[6rem] hover:underline"
+              >+966563084444 <i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a
+              href="mailto:kamal@magna-strategy.com"
+              class="text-black mt-2 relative left-[1rem] hover:underline"
+              >kamal@magna-strategy.com<i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </section>
+        <!------------------MAP Section---------------------->
+        <section id="map">
+          <div class="map_container">
+            <div dir="rtl" class="location absolute right-0">
+              <h1 class="text-4xl mr-2 border-b-2 w-[600px] p-[0.2rem]">
+                عنوان الشركة
+              </h1>
+              <span class="on-hold flex">
+                <p dir="ltr" class="text-2xl mt-2">
+                  المملكة العربية السعودية , جدة
+                </p>
+                <i dir="rtl" class="fa-solid fa-location-dot"></i>
+              </span>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475323.9792524807!2d39.2111492!3d21.45012295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b118db!2sJeddah%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1705508225378!5m2!1sen!2seg"
+              width="620"
+              height="321"
+              style="border-radius: 12px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="Routes-footer w-full h-[80px] text-center">
+      <h1 class="mt-16 text-[#BDC5D1]">© 2023 by MAGNA STRATEGY</h1>
+    </footer>
+    <!------------All Plugins--------->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--bx slider dependacies-->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!----------bx trigger--------->
+    <!--
+  #1-this execution has to be on body not on index to trigger be as priority for Responsive 
+  #2-there's a Span trigger container for Gsap (GreenSock) animation incase if there's a loader
+  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--All Scripts Dom index-->
+    <script src="./index.js"></script>
+  </body>
+</html>
